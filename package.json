@@ -1,0 +1,24 @@
+{
+  "name": "bc-fiori",
+  "version": "1.0.0",
+  "description": "Smitapurva Fiori - bootstrap based theme which looks like SAP Fiori.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "startbootstrap-simple-sidebar": "^4.0.0-alpha"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yacobwijaya/sp-fiori.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yacobwijaya/sp-fiori/issues"
+  },
+  "homepage": "https://github.com/yacobwijaya/sp-fiori#readme"
+}

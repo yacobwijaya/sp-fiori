@@ -1,0 +1,32 @@
+body {
+    padding-top: 54px;
+}
+
+/* Navigation */
+/* Navigation: Temporary fix for navbar responsiveness */
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+
+/*.navbar > .brand-line {*/
+    /*height: 4px;*/
+    /*background-color: #427cac;*/
+/*}*/
+
+.navbar {
+    border-top: #009de0 4px solid;
+    background: linear-gradient(180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 239, 239, 1) 100%);
+}
+
+.navbar-brand-whitelabel {
+    width: 20px;
+    height: auto;
+}
