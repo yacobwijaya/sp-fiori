@@ -14,11 +14,6 @@ body {
     }
 }
 
-/*.navbar > .brand-line {*/
-    /*height: 4px;*/
-    /*background-color: #427cac;*/
-/*}*/
-
 .navbar {
     border-top: #009de0 4px solid;
     background: linear-gradient(180deg,
@@ -29,4 +24,9 @@ body {
 .navbar-brand-whitelabel {
     width: 20px;
     height: auto;
+}
+
+#page-content-wrapper {
+    background: linear-gradient(to bottom, #1a4d80 0%, #178299 50%, #2dabb3 100%) fixed;
+    min-height: calc(100vh - 54px);
 }
