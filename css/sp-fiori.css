@@ -1,5 +1,29 @@
+:root {
+    --grid-gutter-width: 16px;
+    --text-primary: rgba(0,0,0,.87);
+    --text-secondary: rgba(0,0,0,.54);
+    --text-disabled: rgba(0,0,0,.38);
+    --divider: rgba(0,0,0,.12);
+    --icon-color: #007cc0;
+}
+
+/* Body */
 body {
     padding-top: 54px;
+}
+
+/* Body: Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.3);
 }
 
 /* Navigation */
@@ -26,7 +50,99 @@ body {
     height: auto;
 }
 
+/* Page */
 #page-content-wrapper {
     background: linear-gradient(to bottom, #1a4d80 0%, #178299 50%, #2dabb3 100%) fixed;
     min-height: calc(100vh - 54px);
 }
+
+@media screen and (min-width: 768px) {
+    #page-content-wrapper {
+        padding: 20px 48px;
+    }
+}
+
+/* Page: Dashboard */
+.page--dashboard h3.title {
+    color: white;
+}
+
+.page--dashboard .row {
+    margin: calc(var(--grid-gutter-width) / -2);
+}
+
+.page--dashboard .row > * {
+    padding: calc(var(--grid-gutter-width) / 2);
+}
+
+/* Box */
+.box {
+    position: relative;
+    width: 100%;
+    height: 176px;
+    padding: 8px;
+    background: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.box:hover {
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.38);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.38);
+    box-shadow: 0 1px 3px rgba(0,0,0,.38);
+    transition-duration: .1s;
+}
+
+.box .box__header {
+    font-size: 16px;
+    color: var(--text-primary);
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+}
+
+.box .box__subheader {
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+}
+
+.box .box__footer {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    font-size: 14px;
+    color: var(--text-disabled);
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+}
+
+.box .box__icon {
+    position: absolute;
+    left: 8px;
+    bottom: 30px;
+    float: left;
+    font-size: 36px;
+    color: var(--icon-color);
+    vertical-align: baseline;
+}
+
+.box .box__number {
+    position: absolute;
+    right: 8px;
+    bottom: 30px;
+    float: right;
+    font-size: 48px;
+    color: var(--text-secondary);
+    text-align: right;
+    vertical-align: baseline;
+}
+
