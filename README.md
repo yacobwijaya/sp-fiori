@@ -53,6 +53,7 @@ Example of usage:
     </div>
 </div>
 ```
+
 Options:
 * Add class `no-padding` after `shell__body` to remove padding.
 
@@ -68,3 +69,6 @@ Example of usage:
     <p>This is basic paper usage.</p>
 </div>
 ```
+
+Options:
+* Add class `paper--shadow` after `paper` to add shadow.
