@@ -21,3 +21,29 @@ Box is used in Fiori Dashboard. It could be used inside `row` and `col-[size]-[c
     </div>
 </div>
 ```
+## Shell
+Shell is a common container or page that is used in Fiori app. Each shell consists of following part.
+* Header, contains: navigation button (shell_nav) and title (shell_title).
+* Body, contains: any `<html>` components. It usually contain table, or forms.
+* Footer, contains: action buttons such as "Approve", "Reject", or iconic button.
+Example of usage:
+```html
+<div class="shell-container">
+    <div class="shell__header">
+        <a class="shell__nav">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <h1 class="shell__title">Inputs</h1>
+    </div>
+    <div class="shell__body">
+        Content Here
+    </div>
+    <div class="shell__footer text-right">
+        <button class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></button>
+        <button class="btn btn-success">Approve</button>
+        <button class="btn btn-danger">Reject</button>
+    </div>
+</div>
+```
+Options:
+* Add class `no-padding` after `shell__body` to remove padding.

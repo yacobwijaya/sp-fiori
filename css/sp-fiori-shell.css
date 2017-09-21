@@ -8,7 +8,6 @@
     display: block;
     height: calc(100vh - 54px);
     max-width: 1280px;
-    background-color: white;
     margin: auto;
     -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .38);
     -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, .38);
@@ -26,6 +25,7 @@
     top: 0;
     width: 100%;
     height: var(--shell-header-height);
+    background-color: white;
     box-sizing: border-box;
     border-bottom: solid 1px var(--divider);
 }
@@ -45,7 +45,6 @@
 
 .shell__title {
     font-size: 16px;
-    font-weight: 500;
     text-align: center;
     line-height: var(--shell-header-height);
 }
@@ -69,7 +68,7 @@
     box-sizing: border-box;
     border-top: solid 1px var(--divider);
     vertical-align: middle;
-    padding: 5px 16px ;
+    padding: 5px 16px;
 }
 
 /* Default button style on Shell Footer */
