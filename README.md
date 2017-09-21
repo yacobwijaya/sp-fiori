@@ -9,7 +9,9 @@ Smitapurva Fiori (SP Fiori) is a bootstrap based theme which looks like SAP Fior
 
 # UI Components
 ## Box
-Box is used in Fiori Dashboard. It could be used inside `row` and `col-[size]-[col]` within Bootstrap's grid system. Example:
+Box is used in Fiori Dashboard. It could be used inside `row` and `col-[size]-[col]` within Bootstrap's grid system.
+![box](https://user-images.githubusercontent.com/31851739/30687565-d5e8cd42-9ee5-11e7-84c0-ef5d80794215.png)
+Example of usage:
 ```html
 <div class="col-md-2 col-sm-4 col-xs-6">
     <div class="box">
@@ -27,7 +29,7 @@ Shell is a common container or page that is used in Fiori app. Each shell consis
 * Body, contains: any `<html>` components. It usually contain table, or forms.
 * Footer, contains: action buttons such as "Approve", "Reject", or iconic button.
 
-![shell](https://user-images.githubusercontent.com/31851739/30687066-61a67bba-9ee4-11e7-9374-a9c167a9db80.png "Shell Component")
+![shell](https://user-images.githubusercontent.com/31851739/30687066-61a67bba-9ee4-11e7-9374-a9c167a9db80.png)
 Example of usage:
 ```html
 <div class="shell-container">
