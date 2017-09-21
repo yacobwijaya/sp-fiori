@@ -1,4 +1,6 @@
 @import url(sp-fiori-box.css);
+@import url(sp-fiori-shell.css);
+@import url(sp-fiori-paper.css);
 
 :root {
     --grid-gutter-width: 16px;
@@ -7,6 +9,8 @@
     --text-disabled: rgba(0,0,0,.38);
     --divider: rgba(0,0,0,.12);
     --icon-color: #007cc0;
+    --bg-default: #F5F5F5;
+    --bg-dark: #212121;
 }
 
 /* Body */
@@ -64,6 +68,10 @@ body {
     }
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
 /* Page: Dashboard */
 .page--dashboard h3.title {
     color: white;
@@ -75,4 +83,38 @@ body {
 
 .page--dashboard .row > * {
     padding: calc(var(--grid-gutter-width) / 2);
+}
+
+/* Form */
+/* Form: Horizontal */
+.form-group .control-label,
+.form-group .form-control,
+.form-group .form-control-static {
+    min-height: 38px;
+    vertical-align: baseline;
+}
+
+.form-group .control-label {
+    padding-top: 8px;
+    color: var(--text-secondary);
+}
+
+.form-group .form-control,
+.form-group .form-control-static {
+    border-radius: 0;
+    color: var(--text-primary);
+}
+
+/* Button */
+.btn {
+    height: 40px;
+    border-radius: 0.2rem;
+}
+
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    text-shadow: 0 1px 0 rgba(0,0,0,0.38);
 }
