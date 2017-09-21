@@ -1,6 +1,7 @@
 @import url(sp-fiori-box.css);
-@import url(sp-fiori-shell.css);
+@import url(sp-fiori-dashboard.css);
 @import url(sp-fiori-paper.css);
+@import url(sp-fiori-shell.css);
 
 :root {
     --grid-gutter-width: 16px;
@@ -71,19 +72,6 @@ body {
 
 .no-padding {
     padding: 0 !important;
-}
-
-/* Page: Dashboard */
-.page--dashboard h3.title {
-    color: white;
-}
-
-.page--dashboard .row {
-    margin: calc(var(--grid-gutter-width) / -2);
-}
-
-.page--dashboard .row > * {
-    padding: calc(var(--grid-gutter-width) / 2);
 }
 
 /* Form */
