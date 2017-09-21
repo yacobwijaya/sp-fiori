@@ -26,6 +26,7 @@ Shell is a common container or page that is used in Fiori app. Each shell consis
 * Header, contains: navigation button (shell_nav) and title (shell_title).
 * Body, contains: any `<html>` components. It usually contain table, or forms.
 * Footer, contains: action buttons such as "Approve", "Reject", or iconic button.
+
 ![shell](https://user-images.githubusercontent.com/31851739/30687066-61a67bba-9ee4-11e7-9374-a9c167a9db80.png "Shell Component")
 Example of usage:
 ```html
