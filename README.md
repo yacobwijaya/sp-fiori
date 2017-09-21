@@ -8,9 +8,11 @@ Smitapurva Fiori (SP Fiori) is a bootstrap based theme which looks like SAP Fior
 * Startbootstrap Simple Sidebar `npm i startbootstrap-simple-sidebar --save`.
 
 # UI Components
+
 ## Box
 Box is used in Fiori Dashboard. It could be used inside `row` and `col-[size]-[col]` within Bootstrap's grid system.
 ![box](https://user-images.githubusercontent.com/31851739/30687565-d5e8cd42-9ee5-11e7-84c0-ef5d80794215.png)
+
 Example of usage:
 ```html
 <div class="col-md-2 col-sm-4 col-xs-6">
@@ -23,6 +25,7 @@ Example of usage:
     </div>
 </div>
 ```
+
 ## Shell
 Shell is a common container or page that is used in Fiori app. Each shell consists of following part.
 * Header, contains: navigation button (shell_nav) and title (shell_title).
@@ -30,6 +33,7 @@ Shell is a common container or page that is used in Fiori app. Each shell consis
 * Footer, contains: action buttons such as "Approve", "Reject", or iconic button.
 
 ![shell](https://user-images.githubusercontent.com/31851739/30687066-61a67bba-9ee4-11e7-9374-a9c167a9db80.png)
+
 Example of usage:
 ```html
 <div class="shell-container">
@@ -51,3 +55,16 @@ Example of usage:
 ```
 Options:
 * Add class `no-padding` after `shell__body` to remove padding.
+
+## Paper
+Paper is a background. It is commonly used inside `shell__body` component.
+
+![paper](https://user-images.githubusercontent.com/31851739/30688344-13ff2ea8-9ee8-11e7-9883-55093acc0f88.png)
+
+Example of usage:
+```html
+<div class="paper paper--shadow">
+    <h4>Put your title here</h4>
+    <p>This is basic paper usage.</p>
+</div>
+```
