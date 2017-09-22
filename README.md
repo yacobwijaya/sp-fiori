@@ -5,7 +5,6 @@ Smitapurva Fiori (SP Fiori) is a bootstrap based theme which looks like SAP Fior
 - Clone this git repository.
 - Install these node modules:
 * Bootstrap 3.3 `npm i bootstrap@3 --save`.
-* Startbootstrap Simple Sidebar `npm i startbootstrap-simple-sidebar --save`.
 
 # UI Components
 

@@ -3,6 +3,7 @@
 }
 
 .sidebar-nav {
+    display: block;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -23,35 +24,53 @@
     text-indent: 0;
 }
 
+.sidebar-nav > li {
+    border-bottom: solid 1px var(--divider);
+}
+
+.sidebar-nav li label {
+    display: block;
+    position: relative;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+/* Left margin settings of menu item */
+/*Parent*/
+.sidebar-nav > li label .icon {
+    margin-left: 20px;
+    max-width: 16px;
+    height: auto;
+}
+.sidebar-nav > li label span {
+    margin-left: 20px;
+    font-weight: normal;
+}
+.sidebar-nav > li label .icon-right {
+    position: absolute;
+    right: 20px;
+    line-height: var(--sidebar-menu-height);
+    max-width: 16px;
+    height: auto;
+}
+/*Child*/
+.sidebar-nav ul li label span {
+    margin-left: 58px !important;
+}
+
+/*Active state*/
 .sidebar-nav li.active {
     background-color: #e8eff6;
+}
+
+.sidebar-nav li.active > label span,
+.sidebar-nav li.active > a > label span {
+    font-weight: bold;
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
-}
-
-.sidebar-nav li.active a {
-    font-weight: bold;
-}
-
-.sidebar-nav input[type=checkbox] {
-    /* hide native checkbox */
-    position: absolute;
-    opacity: 0;
-}
-
-.sidebar-nav li label,
-.sidebar-nav li a {
-    display: block;
-    position: relative;
-    margin: 0;
-    /*padding-left: 64px;*/
-    height: var(--sidebar-menu-height);
-    border-bottom: solid 1px var(--divider);
-    text-decoration: none;
-    color: var(--text-primary);
 }
 
 .sidebar-nav li label:hover,
@@ -61,19 +80,13 @@
     text-decoration: none;
 }
 
-.sidebar-nav li.has-children .icon {
-    margin-left: 16px;
+/* Hide native checkbox */
+.sidebar-nav input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
 }
 
-.sidebar-nav li.has-children span {
-    margin-left: -16px;
-    padding-left: 32px;
-}
-
-.sidebar-nav li span {
-    margin-left: 72px;
-}
-
+/* Hide or show child menu item. */
 .sidebar-nav ul {
     /* by default hide all sub menus */
     display: none;
