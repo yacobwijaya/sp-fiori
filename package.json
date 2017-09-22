@@ -4,8 +4,7 @@
   "description": "Smitapurva Fiori - bootstrap based theme which looks like SAP Fiori.",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "startbootstrap-simple-sidebar": "^4.0.0-alpha"
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {},
   "scripts": {
