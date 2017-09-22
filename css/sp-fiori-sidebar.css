@@ -1,0 +1,87 @@
+:root {
+    --sidebar-menu-height: 48px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+/* Sidebar: Menus */
+.sidebar-nav ul {
+    padding-left: 0;
+}
+
+.sidebar-nav li {
+    position: relative;
+    line-height: var(--sidebar-menu-height);
+    list-style-type: none;
+    background-color: white;
+    text-indent: 0;
+}
+
+.sidebar-nav li.active {
+    background-color: #e8eff6;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li.active a {
+    font-weight: bold;
+}
+
+.sidebar-nav input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+}
+
+.sidebar-nav li label,
+.sidebar-nav li a {
+    display: block;
+    position: relative;
+    margin: 0;
+    /*padding-left: 64px;*/
+    height: var(--sidebar-menu-height);
+    border-bottom: solid 1px var(--divider);
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.sidebar-nav li label:hover,
+.sidebar-nav li a:hover {
+    background: #E0E0E0;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.sidebar-nav li.has-children .icon {
+    margin-left: 16px;
+}
+
+.sidebar-nav li.has-children span {
+    margin-left: -16px;
+    padding-left: 32px;
+}
+
+.sidebar-nav li span {
+    margin-left: 72px;
+}
+
+.sidebar-nav ul {
+    /* by default hide all sub menus */
+    display: none;
+}
+
+.sidebar-nav input[type=checkbox]:checked + label + ul,
+.sidebar-nav input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+    /* show children when item is checked */
+    display: block;
+}

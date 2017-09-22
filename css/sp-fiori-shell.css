@@ -4,8 +4,8 @@
 }
 
 .shell-container {
+    display: flex;
     position: relative;
-    display: block;
     height: calc(100vh - 54px);
     max-width: 1280px;
     margin: auto;
@@ -18,6 +18,61 @@
     .shell-container {
         width: 100%;
     }
+}
+
+.shell__sidebar {
+    position: relative;
+    width: 320px;
+    display: block;
+}
+
+.shell__sidebar-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--shell-header-height);
+    line-height: var(--shell-header-height);
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: solid 1px var(--divider);
+    border-right: solid 1px var(--divider);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.shell__sidebar-body {
+    position: absolute;
+    top: var(--shell-header-height);
+    bottom: var(--shell-footer-height);
+    width: 100%;
+    overflow: auto;
+    background: white;
+    border-right: solid 1px var(--divider);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.shell__sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--shell-footer-height);
+    background: var(--bg-dark);
+    border-top: solid 1px var(--divider);
+    border-right: solid 1px var(--divider);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 5px 16px;
+}
+
+.shell__main {
+    position: relative;
+    flex-grow: 1;
 }
 
 .shell__header {
@@ -65,7 +120,6 @@
     width: 100%;
     height: var(--shell-footer-height);
     background: var(--bg-dark);
-    box-sizing: border-box;
     border-top: solid 1px var(--divider);
     vertical-align: middle;
     padding: 5px 16px;

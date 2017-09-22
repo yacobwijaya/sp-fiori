@@ -2,6 +2,7 @@
 @import url(sp-fiori-dashboard.css);
 @import url(sp-fiori-paper.css);
 @import url(sp-fiori-shell.css);
+@import url(sp-fiori-sidebar.css);
 
 :root {
     --grid-gutter-width: 16px;
@@ -59,15 +60,9 @@ body {
 }
 
 /* Page */
-#page-content-wrapper {
+.page {
     background: linear-gradient(to bottom, #1a4d80 0%, #178299 50%, #2dabb3 100%) fixed;
     min-height: calc(100vh - 54px);
-}
-
-@media screen and (min-width: 768px) {
-    #page-content-wrapper {
-        padding: 20px 48px;
-    }
 }
 
 .no-padding {
