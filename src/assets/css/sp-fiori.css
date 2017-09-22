@@ -1,0 +1,104 @@
+@import url(sp-fiori-box.css);
+@import url(sp-fiori-dashboard.css);
+@import url(sp-fiori-paper.css);
+@import url(sp-fiori-shell.css);
+@import url(sp-fiori-sidebar.css);
+
+:root {
+    --grid-gutter-width: 16px;
+    --text-primary: rgba(0,0,0,.87);
+    --text-secondary: rgba(0,0,0,.54);
+    --text-disabled: rgba(0,0,0,.38);
+    --divider: rgba(0,0,0,.12);
+    --icon-color: #007cc0;
+    --bg-default: #F5F5F5;
+    --bg-dark: #212121;
+    --bg-light-blue: #DEF0F2;
+}
+
+/* Body */
+body {
+    padding-top: 54px;
+}
+
+/* Body: Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.3);
+}
+
+/* Navigation */
+/* Navigation: Temporary fix for navbar responsiveness */
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+
+.navbar {
+    border-top: #009de0 4px solid;
+    background: linear-gradient(180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 239, 239, 1) 100%);
+}
+
+.navbar-brand-whitelabel {
+    width: 20px;
+    height: auto;
+}
+
+/* Page */
+.page {
+    background: linear-gradient(to bottom, #1a4d80 0%, #178299 50%, #2dabb3 100%) fixed;
+    min-height: calc(100vh - 54px);
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+/* Form */
+/* Form: Horizontal */
+.form-group .control-label,
+.form-group .form-control,
+.form-group .form-control-static {
+    min-height: 38px;
+    vertical-align: baseline;
+}
+
+.form-group .control-label {
+    padding-top: 8px;
+    color: var(--text-secondary);
+}
+
+.form-group .form-control,
+.form-group .form-control-static {
+    border-radius: 0;
+    color: var(--text-primary);
+}
+
+/* Button */
+.btn {
+    height: 40px;
+    border-radius: 0.2rem;
+}
+
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    text-shadow: 0 1px 0 rgba(0,0,0,0.38);
+}
