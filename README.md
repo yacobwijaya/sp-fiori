@@ -27,29 +27,46 @@ Example of usage:
 
 ## Shell
 Shell is a common container or page that is used in Fiori app. Each shell consists of following part.
+* Sidebar Header, contains: header title (text).
+* Sidebar Body, contains: free space to add any HTML tag. It usually contains sidebar menu navigation (separate topic).
+* Sidebar Footer, contains: free space to any action buttons (if needed).
 * Header, contains: navigation button (shell_nav) and title (shell_title).
-* Body, contains: any `<html>` components. It usually contain table, or forms.
-* Footer, contains: action buttons such as "Approve", "Reject", or iconic button.
+* Body, contains: any HTML components. It usually contain table, or forms.
+* Footer, contains: action buttons such as "Approve", "Reject", or icon button.
 
-![shell](https://user-images.githubusercontent.com/31851739/30687066-61a67bba-9ee4-11e7-9374-a9c167a9db80.png)
+![shell](https://user-images.githubusercontent.com/31851739/30733116-c62e4214-9f9f-11e7-93ae-f43472b022a6.png)
+
 
 Example of usage:
 ```html
 <div class="shell-container">
-    <div class="shell__header">
-        <a class="shell__nav">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <h1 class="shell__title">Inputs</h1>
-    </div>
-    <div class="shell__body">
-        Content Here
-    </div>
-    <div class="shell__footer text-right">
-        <button class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></button>
-        <button class="btn btn-success">Approve</button>
-        <button class="btn btn-danger">Reject</button>
-    </div>
+    <aside class="shell__sidebar">
+        <div class="shell__sidebar-header">
+            Header here...
+        </div>
+        <div class="shell__sidebar-body">
+            Sidebar menu here...
+        </div>
+        <div class="shell__sidebar-footer">
+            Footer here...
+        </div>
+    </aside>
+    <section class="shell__main">
+        <div class="shell__header">
+            <a class="shell__nav" href="#menu-toggle" id="menu-toggle">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <h1 class="shell__title">Main header here...</h1>
+        </div>
+        <div class="shell__body">
+            Main content here...
+        </div>
+        <div class="shell__footer text-right">
+            <button class="btn btn-default"><span class="glyphicon glyphicon-cog"></span></button>
+            <button class="btn btn-success">Approve</button>
+            <button class="btn btn-danger">Reject</button>
+        </div>
+    </section>
 </div>
 ```
 
