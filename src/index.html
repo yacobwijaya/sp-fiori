@@ -7,9 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>SP Fiori</title>
     <!-- CSS -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="node_modules/startbootstrap-simple-sidebar/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/highlight.js/styles/default.css">
     <link href="assets/css/sp-fiori.css" rel="stylesheet">
+    <link href="assets/css/sp-bootstrap-docs.css" rel="stylesheet">
     <!-- JS -->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -50,16 +51,22 @@
         </div>
     </nav>
     <!-- Page -->
-    <section class="page">
+    <section class="page page--white">
         <!--<div w3-include-html="example/dashboard.html"></div>-->
-        <div w3-include-html="example/form-2.html"></div>
+        <!--<div w3-include-html="example/form-2.html"></div>-->
+        <div w3-include-html="example/components.html"></div>
     </section>
     <!-- JS 2 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/startbootstrap-simple-sidebar/js/tether.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../node_modules/highlight.js/lib/highlight.js"></script>
     <script>
+        hljs.initHighlightingOnLoad();
+        $('body').scrollspy({
+            target: '.bs-docs-sidebar',
+            offset: 40
+        });
         w3.includeHTML();
     </script>
 </body>
