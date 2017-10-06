@@ -86,9 +86,15 @@
     top: 0;
     width: 100%;
     height: var(--shell-header-height);
+    line-height: var(--shell-header-height);
     background-color: white;
-    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
     border-bottom: solid 1px var(--divider);
+    border-right: solid 1px var(--divider);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .shell__header > * {
