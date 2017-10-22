@@ -10,10 +10,14 @@
     --text-secondary: rgba(0,0,0,.54);
     --text-disabled: rgba(0,0,0,.38);
     --divider: rgba(0,0,0,.12);
+    --navbar-stripe: #009de0;
+    --navbar-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(239, 239, 239, 1) 100%);
+    --workspace-bg: linear-gradient(to bottom, #2DABB3 0%, #178299 50%, #1A4D80 100%);
     --icon-color: #007cc0;
     --bg-default: #FAFAFA;
     --bg-dark: #212121;
     --bg-light-blue: #DEF0F2;
+
 }
 
 /* Body */
@@ -37,22 +41,9 @@ body {
 }
 
 /* Navigation */
-/* Navigation: Temporary fix for navbar responsiveness */
-.navbar-toggler {
-    z-index: 1;
-}
-
-@media (max-width: 576px) {
-    nav > .container {
-        width: 100%;
-    }
-}
-
 .navbar {
-    border-top: #009de0 4px solid;
-    background: linear-gradient(180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(239, 239, 239, 1) 100%);
+    border-top: var(--navbar-stripe) 4px solid;
+    background: var(--navbar-color);
 }
 
 .navbar-brand-whitelabel {
